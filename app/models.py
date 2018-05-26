@@ -33,6 +33,10 @@ class User(UserMixin, db.Model):
         secondaryjoin=(followers.c.followed_id == id),
         backref=db.backref('followers', lazy='dynamic'), lazy='dynamic')
 
+    def __init__(self, **kwargs):
+        for key, value in kwargs.items():
+            self.__setattr__(key, value)
+
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
 
