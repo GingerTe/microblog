@@ -15,7 +15,6 @@ def translate(text, source_language, dest_language):
                                  text=text,
                                  lang="%s-%s" % (source_language, dest_language))
                      )
-    print(r.url)
     if r.status_code != 200:
         return _('Error: the translation service failed.')
     return json.loads(r.content.decode('utf-8-sig'))['text'][0]
