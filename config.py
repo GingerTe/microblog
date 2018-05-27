@@ -1,7 +1,11 @@
 # coding: utf-8
 import os
+from dotenv import load_dotenv
 
 basedir = os.path.abspath(os.path.dirname(__file__))
+env_file = os.path.join(basedir, '.env')
+if os.path.exists(env_file):
+    load_dotenv(env_file)
 
 
 class Config(object):
