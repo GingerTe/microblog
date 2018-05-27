@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-05-27 21:46+0300\n"
+"POT-Creation-Date: 2018-05-27 23:04+0300\n"
 "PO-Revision-Date: 2018-05-27 18:01+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -39,7 +39,7 @@ msgstr "Пароль"
 msgid "Remember Me"
 msgstr "Запомнить меня"
 
-#: app/forms.py:14 app/routes.py:74 app/templates/login.html:5
+#: app/forms.py:14 app/routes.py:79 app/templates/login.html:5
 msgid "Sign In"
 msgstr "Войти в систему"
 
@@ -51,7 +51,7 @@ msgstr "Электронная почта"
 msgid "Repeat Password"
 msgstr "Повтор пароля"
 
-#: app/forms.py:24 app/routes.py:95 app/templates/register.html:5
+#: app/forms.py:24 app/routes.py:100 app/templates/register.html:5
 msgid "Register"
 msgstr "Зарегистрироваться"
 
@@ -79,68 +79,76 @@ msgstr "Подтвердить"
 msgid "Say something"
 msgstr "Скажите что-нибудь"
 
-#: app/routes.py:30
+#: app/routes.py:35
 msgid "Your post is now live!"
 msgstr "Ваш пост добавлен!"
 
-#: app/routes.py:39 app/templates/base.html:22
+#: app/routes.py:44 app/templates/base.html:22
 msgid "Home"
 msgstr "Домой"
 
-#: app/routes.py:54 app/templates/base.html:23
+#: app/routes.py:59 app/templates/base.html:23
 msgid "Explore"
 msgstr "Исследовать"
 
-#: app/routes.py:67
+#: app/routes.py:72
 msgid "Invalid username or password"
 msgstr "Некорректное имя пользователя или пароль"
 
-#: app/routes.py:93
+#: app/routes.py:98
 msgid "Congratulations, you are now a registered user!"
 msgstr "Поздравляем, теперь вы зарегистрированный пользователь"
 
-#: app/routes.py:108
+#: app/routes.py:113
 msgid "Check your email for the instructions to reset your password"
 msgstr "Проверьте электронную почту, мы отправили вам инструкцию по сбросу пароля"
 
-#: app/routes.py:111 app/templates/reset_password_request.html:5
+#: app/routes.py:116 app/templates/reset_password_request.html:5
 msgid "Reset Password"
 msgstr "Сбросить пароль"
 
-#: app/routes.py:125
+#: app/routes.py:130
 msgid "Your password has been reset."
 msgstr "Ваш пароль был сброшен"
 
-#: app/routes.py:153
+#: app/routes.py:158
 msgid "Your changes have been saved."
 msgstr "Изменения сохранены"
 
-#: app/routes.py:158 app/templates/edit_profile.html:5
+#: app/routes.py:163 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "Редактировать профиль"
 
-#: app/routes.py:167 app/routes.py:183
+#: app/routes.py:172 app/routes.py:188
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Пользователь %(username)s не найден."
 
-#: app/routes.py:170
+#: app/routes.py:175
 msgid "You cannot follow yourself!"
 msgstr "Вы не можете следовать сами за собой!"
 
-#: app/routes.py:174
+#: app/routes.py:179
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Вы следуете за %(username)s"
 
-#: app/routes.py:186
+#: app/routes.py:191
 msgid "You cannot unfollow yourself!"
 msgstr "Вы не можете перестать следовать за собой!"
 
-#: app/routes.py:190
+#: app/routes.py:195
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "Вы не следуете за %(username)s"
+
+#: app/translate.py:10
+msgid "Error: the translation service is not configured."
+msgstr "Ошибка: сервер перевода не настроен"
+
+#: app/translate.py:20
+msgid "Error: the translation service failed."
+msgstr "Ошибка: сервер перевода сломался"
 
 #: app/templates/404.html:4
 msgid "Not Found"
@@ -163,6 +171,10 @@ msgstr "Администраторам было отправлено сообщ�
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s сказал(а) %(when)s"
 
+#: app/templates/_post.html:27
+msgid "Translate"
+msgstr "Перевести"
+
 #: app/templates/base.html:4
 msgid "Welcome to Microblog"
 msgstr "Добро пожаловать в Microblog"
@@ -179,6 +191,10 @@ msgstr "Профиль"
 msgid "Logout"
 msgstr "Выйти"
 
+#: app/templates/base.html:68
+msgid "Error: Could not contact server."
+msgstr "Ошибка: Невозможно соединиться с сервером."
+
 #: app/templates/index.html:5
 #, python-format
 msgid "Hi, %(username)s!"
@@ -186,11 +202,11 @@ msgstr "Привет, %(username)s!"
 
 #: app/templates/index.html:17 app/templates/user.html:31
 msgid "Newer posts"
-msgstr "Новее"
+msgstr "Более новые посты"
 
 #: app/templates/index.html:22 app/templates/user.html:36
 msgid "Older posts"
-msgstr "Старее"
+msgstr "Более старые посты"
 
 #: app/templates/login.html:12
 msgid "New User?"
