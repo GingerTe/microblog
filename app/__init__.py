@@ -30,6 +30,9 @@ moment = Moment(app)
 
 babel = Babel(app)
 
+from app.errors import bp as errors_bp
+app.register_blueprint(errors_bp)
+
 
 @babel.localeselector
 def get_locale():
