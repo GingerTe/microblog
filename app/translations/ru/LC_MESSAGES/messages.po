@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-05-28 00:27+0300\n"
+"POT-Creation-Date: 2018-05-28 16:23+0300\n"
 "PO-Revision-Date: 2018-05-27 18:01+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
 
-#: app/__init__.py:18
+#: app/__init__.py:20
 msgid "Please log in to access this page."
 msgstr "Пожалуйста войдите, чтобы увидеть эту страницу"
 
@@ -35,7 +35,7 @@ msgstr "Ошибка: сервер перевода сломался"
 msgid "[Microblog] Reset Your Password"
 msgstr "[Microblog] Сброс пароля"
 
-#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:10
+#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:11
 msgid "Username"
 msgstr "Имя пользователя"
 
@@ -64,7 +64,7 @@ msgstr "Повтор пароля"
 msgid "Register"
 msgstr "Зарегистрироваться"
 
-#: app/auth/forms.py:27 app/main/forms.py:23
+#: app/auth/forms.py:27 app/main/forms.py:24
 msgid "Please use a different username."
 msgstr "Пожалуйста, используйте другое имя пользователя"
 
@@ -96,27 +96,31 @@ msgstr "Сбросить пароль"
 msgid "Your password has been reset."
 msgstr "Ваш пароль был сброшен"
 
-#: app/main/forms.py:11
+#: app/main/forms.py:12
 msgid "About me"
 msgstr "Обо мне"
 
-#: app/main/forms.py:13 app/main/forms.py:28
+#: app/main/forms.py:14 app/main/forms.py:29
 msgid "Submit"
 msgstr "Подтвердить"
 
-#: app/main/forms.py:27
+#: app/main/forms.py:28
 msgid "Say something"
 msgstr "Скажите что-нибудь"
+
+#: app/main/forms.py:33 app/main/routes.py:146
+msgid "Search"
+msgstr "Поиск"
 
 #: app/main/routes.py:33
 msgid "Your post is now live!"
 msgstr "Ваш пост добавлен!"
 
-#: app/main/routes.py:42 app/templates/base.html:21
+#: app/main/routes.py:42 app/templates/base.html:22
 msgid "Home"
 msgstr "Домой"
 
-#: app/main/routes.py:57 app/templates/base.html:22
+#: app/main/routes.py:57 app/templates/base.html:23
 msgid "Explore"
 msgstr "Исследовать"
 
@@ -164,19 +168,19 @@ msgstr "Перевести"
 msgid "Welcome to Microblog"
 msgstr "Добро пожаловать в Microblog"
 
-#: app/templates/base.html:26
+#: app/templates/base.html:38
 msgid "Login"
 msgstr "Войти"
 
-#: app/templates/base.html:28
+#: app/templates/base.html:40
 msgid "Profile"
 msgstr "Профиль"
 
-#: app/templates/base.html:29
+#: app/templates/base.html:42
 msgid "Logout"
 msgstr "Выйти"
 
-#: app/templates/base.html:66
+#: app/templates/base.html:79
 msgid "Error: Could not contact server."
 msgstr "Ошибка: Невозможно соединиться с сервером."
 
@@ -192,6 +196,18 @@ msgstr "Более новые посты"
 #: app/templates/index.html:22 app/templates/user.html:36
 msgid "Older posts"
 msgstr "Более старые посты"
+
+#: app/templates/search.html:4
+msgid "Search Results"
+msgstr "Результаты поиска"
+
+#: app/templates/search.html:13
+msgid "Previous results"
+msgstr "Предыдущая страница"
+
+#: app/templates/search.html:18
+msgid "Next results"
+msgstr "Следующая страница"
 
 #: app/templates/user.html:8
 msgid "User"
