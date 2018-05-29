@@ -40,6 +40,11 @@
                         <li><a href="{{ url_for('main.user', username=current_user.username) }}">{{ _('Profile') }}</a>
                         </li>
                         <li><a href="{{ url_for('auth.logout') }}">{{ _('Logout') }}</a></li>
+                        <li>
+                            <a href="{{ url_for('main.messages') }}">
+                                {{ _('Messages') }}
+                            </a>
+                        </li>
                     {% endif %}
                 </ul>
             </div>
@@ -105,7 +110,7 @@
                         );
                     }, 1000);
                 },
-                function(event) {
+                function (event) {
                     // mouse out event handler
                     let elem = $(event.currentTarget);
                     if (timer) {
